@@ -18,3 +18,35 @@
     --cor3: #8C2B4F;
     --cor4: #591C32;
 }
+
+/* Menu */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor1);
+    padding: 2em 1em;
+}
+
+#logo p {
+    color: var(--cor4);
+    font-weight: 600;
+}
+
+#logo span {
+    font-weight: bolder;
+    padding-right: 0.25em;
+}
+
+#nav-links {
+    display: flex;
+}
+
+#nav-links a {
+    display: block;
+    padding: 0.25em 1em;
+}
