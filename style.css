@@ -58,6 +58,7 @@ html {
     display: block;
     padding: 0.25em 0.5em;
     border-radius: 5px;
+    font-weight: 500;
 }
 
 #nav-links a:hover {
@@ -135,7 +136,40 @@ html {
 
 /* Contact Section */
 
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor0);
+    
+}
 
+#contact-section a,
+#contact-section h3 {
+    color: var(--cor4);
+    font-weight: 500;
+    padding: 1em 1em 1em 0;
+}
+
+#contact-section a{
+    font-size: 1.25rem;
+}
+
+#contact-section a:hover{
+    transform: scale(1.5);
+}
+
+
+#contact h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+i {
+    color: var(--cor4);
+    padding-right: .25em;
+}
 
 /* Footer */
 
@@ -148,3 +182,5 @@ html {
     background-color: var(--cor1);
     padding: 2em 1em;
 }
+
+
