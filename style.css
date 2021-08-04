@@ -142,7 +142,6 @@ html {
     align-items: center;
     height: 100vh;
     background-color: var(--cor0);
-    
 }
 
 #contact-section a,
@@ -150,6 +149,7 @@ html {
     color: var(--cor4);
     font-weight: 500;
     padding: 1em 1em 1em 0;
+    /* border: 1px solid black; */
 }
 
 #contact-section a{
@@ -157,13 +157,26 @@ html {
 }
 
 #contact-section a:hover{
-    transform: scale(1.5);
+    position: relative;
+    animation-name: scale;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
 }
 
+@keyframes scale {
+    100% {
+      top: 5px;
+    }
+  }
+
+#contact-section a:last-child{
+    padding-right: 0;
+}
 
 #contact h3 {
     text-align: center;
     font-size: 2rem;
+    padding-right: 0;
 }
 
 i {
