@@ -117,6 +117,7 @@ html {
     border-radius: 5px;
     background-color: var(--cor4);
     box-shadow: 0 0 7px var(--cor4);
+    max-width: 100%;
 }
  
 .img-project {
@@ -149,7 +150,6 @@ html {
     color: var(--cor4);
     font-weight: 500;
     padding: 1em 1em 1em 0;
-    /* border: 1px solid black; */
 }
 
 #contact-section a{
@@ -196,4 +196,14 @@ i {
     padding: 2em 1em;
 }
 
+@media (min-width: 600px) {
+    #grid-projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 3em;
+        width: 75%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
 
